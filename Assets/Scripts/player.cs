@@ -2,6 +2,7 @@
 using System.Collections;
 using UnityEngine.SceneManagement;
 
+
 public class player : MonoBehaviour {
 
     public Renderer rend;
@@ -30,12 +31,9 @@ public class player : MonoBehaviour {
     void Update()
     {
         runnerMovement();
-        runnerMovementChecker();
-
-       
+        runnerMovementChecker(); 
     }
-
-
+		
     //die bewegung links und rechts
     void runnerMovementChecker()
     {
@@ -215,4 +213,6 @@ public class player : MonoBehaviour {
 
         myCam.GetComponent<CamFollow>().ShakeCamera(0.05f, 0.4f);
     }
+
+
 }
